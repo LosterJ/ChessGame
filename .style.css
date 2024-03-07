@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.chessBoard {
+    width: 80vw;
+    height: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.square {
+    width: 12.5%;
+    height: 12.5%;
+    display: flex;
+    background-color:#b58863;
+}
+.square:nth-child(2n+1) {
+    background-color:#f0d9b5
+}
+.coordinate {
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px;
+    padding: 4%;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f0d9b5;
+}
+.square:nth-child(2n+1) .coordinate{
+    color: #b58863;
+}
+.rank { 
+    align-items: flex-start;
+    justify-content: end;
+    width: 100%;
+}
+
+@media (min-width:1200px) {
+    .chessBoard {
+        width: 1200px;
+        height: 1200px;
+    }
+}
+@media (max-width:600px) {
+    .coordinate {
+        font-size:16px;
+    }
+}
