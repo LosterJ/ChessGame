@@ -55,10 +55,10 @@ body {
 }
 
 
-@media (min-width:1200px) {
+@media (min-width:800px) {
     .chessBoard {
-        width: 1200px;
-        height: 1200px;
+        width: 800px;
+        height: 800px;
     }
 }
 @media (max-width:600px) {
